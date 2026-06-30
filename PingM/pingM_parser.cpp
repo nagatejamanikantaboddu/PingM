@@ -4,14 +4,12 @@
 #include <sstream>
 #include <vector>
 
-void pingM_parser::parse(std::string &cmd, std::string &ip_address, std::string &option)
+std::string pingM_parser::parse(std::string &cmd)
 {
-    g_logger.info("PingM parser: " + cmd);
-
     if (cmd.empty())
     {
         g_logger.error("PingM parser: Empty command");
-        return;
+        return "";
     }
 
     std::stringstream ss(cmd);
@@ -26,29 +24,29 @@ void pingM_parser::parse(std::string &cmd, std::string &ip_address, std::string 
     if (tokens.empty())
     {
         g_logger.error("PingM parser: No command found");
-        return;
+        return "";
     }
 
     if (tokens[0] != "ping")
     {
         g_logger.error("PingM parser: Unknown command");
-        return;
+        return "";
     }
 
     if (tokens.size() < 2)
     {
         g_logger.error("PingM parser: Missing IP address or hostname");
-        return;
+        return "";
     }
 
-    ip_address = tokens[1];
-    option = (tokens.size() >= 3) ? tokens[2] : "";
+    const std::string &host = tokens[1];
 
-    g_logger.info("Command : " + tokens[0]);
-    g_logger.info("Host    : " + ip_address);
+#ifdef _WIN32
+    const std::string ping_cmd = "ping -n 4 " + host;
+#else
+    const std::string ping_cmd = "ping -c 4 " + host;
+#endif
 
-    if (!option.empty())
-    {
-        g_logger.info("Option  : " + option);
-    }
+    g_logger.info("Built command: " + ping_cmd);
+    return ping_cmd;
 }

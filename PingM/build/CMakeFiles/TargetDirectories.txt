@@ -1,0 +1,3 @@
+C:/Users/nagat/NPro/PingM/build/CMakeFiles/pingM.dir
+C:/Users/nagat/NPro/PingM/build/CMakeFiles/edit_cache.dir
+C:/Users/nagat/NPro/PingM/build/CMakeFiles/rebuild_cache.dir

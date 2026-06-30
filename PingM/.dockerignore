@@ -1,0 +1,25 @@
+# Build artifacts
+build/
+
+# Git
+.git/
+.gitignore
+
+# Executables
+*.exe
+*.out
+
+# Object files
+*.o
+*.obj
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

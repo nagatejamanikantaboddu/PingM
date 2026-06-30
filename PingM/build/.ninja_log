@@ -1,0 +1,10 @@
+# ninja log v7
+194	2576	8045203367747436	CMakeFiles/pingM.dir/pingM_colour.cpp.obj	648ff6b8d2a6b5ca
+183	2596	8045203367638514	CMakeFiles/pingM.dir/pingM_mapper.cpp.obj	ed9f62041d96f78f
+186	2610	8045203367673601	CMakeFiles/pingM.dir/pingM_logger.cpp.obj	7ee24725c28ded9f
+30	2619	8045203366108627	CMakeFiles/pingM.dir/pingM_main.cpp.obj	ea2695dcce9d0999
+180	2670	8045203367579209	CMakeFiles/pingM.dir/pingM_engine.cpp.obj	d2ae7147119b259b
+174	2701	8045203367551376	CMakeFiles/pingM.dir/pingM_parser.cpp.obj	a1b1ac761c38e4be
+192	2764	8045203367715227	CMakeFiles/pingM.dir/pingM_report.cpp.obj	d8ec9c2634aad043
+189	3114	8045203367693667	CMakeFiles/pingM.dir/pingM_output_parser.cpp.obj	54cf5eadfc0b3f72
+3115	3703	8045203396814234	pingM.exe	815ea1d4bf8013b4

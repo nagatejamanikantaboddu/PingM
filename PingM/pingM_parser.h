@@ -5,5 +5,5 @@
 class pingM_parser
 {
 public:
-    void parse(std::string &cmd, std::string &ip_address, std::string &option);
+    std::string parse(std::string &cmd);
 };
