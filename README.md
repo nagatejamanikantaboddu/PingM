@@ -12,7 +12,7 @@ cmake --build build
 
 The executable is created at build/pingM.
 
-Build with g plus plus
+Build with g++
 
 ```bash
 g++ -std=c++17 pingM_main.cpp pingM_parser.cpp pingM_engine.cpp pingM_mapper.cpp pingM_logger.cpp pingM_output_parser.cpp pingM_report.cpp pingM_colour.cpp -o pingM.exe
