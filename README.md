@@ -32,7 +32,3 @@ Pass the ping subcommand followed by a host.
 ```bash
 pingM ping 8.8.8.8
 ```
-
-Logs
-
-Logs are written to pingM.log.
